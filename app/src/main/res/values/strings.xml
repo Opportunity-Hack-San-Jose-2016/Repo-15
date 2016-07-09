@@ -11,6 +11,7 @@
     <string name="remainder">Remainder</string>
     <string name="statistic">Statistic</string>
     <string name="check_in">Check in</string>
+    <string name="notification">Notification</string>
 
     <!-- Titles of Views -->
     <string name="event_button">Event</string>

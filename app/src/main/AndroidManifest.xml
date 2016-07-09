@@ -15,13 +15,41 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EventActivity"></activity>
-        <activity android:name=".MemberActivity"></activity>
-        <activity android:name=".NewEventActivity"></activity>
-        <activity android:name=".EventListActivity"></activity>
-        <activity android:name=".NewMemberActivity"></activity>
-        <activity android:name=".MemberListActivity"></activity>
-        <activity android:name=".NotificationActivity"></activity>
+        <activity
+            android:name=".EventActivity"
+            android:label="@string/event">
+
+        </activity>
+        <activity
+            android:name=".MemberActivity"
+            android:label="@string/member">
+
+        </activity>
+        <activity
+            android:name=".NewEventActivity"
+            android:label="@string/new_event">
+
+        </activity>
+        <activity
+            android:name=".EventListActivity"
+            android:label="@string/events_list">
+
+        </activity>
+        <activity
+            android:name=".NewMemberActivity"
+            android:label="@string/new_user">
+
+        </activity>
+        <activity
+            android:name=".MemberListActivity"
+            android:label="@string/users_list">
+
+        </activity>
+        <activity
+            android:name=".NotificationActivity"
+            android:label="@string/notification">
+
+        </activity>
     </application>
 
 </manifest>

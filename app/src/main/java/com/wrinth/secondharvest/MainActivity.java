@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        memberButton = (Button) findViewById(R.id.events_list_button);
+        memberButton = (Button) findViewById(R.id.member_button);
         // Set a click listener on that View
         memberButton.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the Events List Button is clicked on.
