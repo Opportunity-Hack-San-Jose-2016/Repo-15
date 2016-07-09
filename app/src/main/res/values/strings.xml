@@ -1,3 +1,39 @@
 <resources>
     <string name="app_name">Second Harvest</string>
+
+    <!-- Titles of Activity -->
+    <string name="event">Event</string>
+    <string name="member">Member</string>
+    <string name="new_event">New Event</string>
+    <string name="events_list">Events List</string>
+    <string name="new_user">New User</string>
+    <string name="users_list">Events List</string>
+    <string name="remainder">Remainder</string>
+    <string name="statistic">Statistic</string>
+    <string name="check_in">Check in</string>
+
+    <!-- Titles of Views -->
+    <string name="event_button">Event</string>
+    <string name="member_button">Member</string>
+    <string name="new_event_button">New Event</string>
+    <string name="events_list_button">Events List</string>
+    <string name="new_member_button">New Member</string>
+    <string name="members_list_button">Member List</string>
+    <string name="create_event_button">Create Event</string>
+    <string name="ok_button">OK</string>
+    <string name="remainder_button">Remainder</string>
+    <string name="statistic_button">Statistic</string>
+    <string name="check_in_button">Check in</string>
+
+    <string name="date_label">Date</string>
+    <string name="location_label">Location</string>
+    <string name="start_time_label">From</string>
+    <string name="end_time_label">to</string>
+    <string name="event_title_label">Title</string>
+
+    <string-array name="food_choices_label">
+        <item>Chicken</item>
+        <item>Beef</item>
+        <item>Rice</item>
+    </string-array>
 </resources>
