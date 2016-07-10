@@ -68,10 +68,7 @@ public class EventInfoActivity extends AppCompatActivity {
         }
         eventID = extraEventID.getString("eventID");
 
-//        FirebaseDatabase database = FirebaseDatabase.getInstance();
-//        DatabaseReference myRef = database.getReference();
-//
-//        myRef.setValue("Hello, World!asdfasdfasdfasdfasdfsadfsdfdsf");
+
 
     }
 }

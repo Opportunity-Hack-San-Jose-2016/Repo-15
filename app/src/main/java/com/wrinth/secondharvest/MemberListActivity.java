@@ -1,6 +1,5 @@
 package com.wrinth.secondharvest;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,17 +9,22 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class MemberListActivity extends AppCompatActivity {
+//
+//    FirebaseDatabase database = FirebaseDatabase.getInstance();
+//    DatabaseReference myRef = database.getReference();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member_list);
 
+
+
+//        int numberOfMember = myRef.numChild;
 
         final ArrayList<Member> memberArray = new ArrayList<Member>();
         memberArray.add(new Member("2","Tom Han", "M", "San Jose", 1234567890));
