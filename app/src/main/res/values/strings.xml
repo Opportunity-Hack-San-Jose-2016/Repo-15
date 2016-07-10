@@ -6,8 +6,11 @@
     <string name="member">Member</string>
     <string name="new_event">New Event</string>
     <string name="events_list">Events List</string>
-    <string name="new_user">New User</string>
-    <string name="users_list">Users List</string>
+    <string name="new_user">User Information</string>
+    <string name="new_user_2">Contact Information</string>
+    <string name="new_user_3">Family Information</string>
+    <string name="new_user_4">Ethnicity, Race and Diability Information</string>
+    <string name="users_list">Events List</string>
     <string name="past_events_list">Past Events List</string>
     <string name="today_events_list">Today Events List</string>
     <string name="future_events_list">Future Events List</string>
@@ -15,8 +18,6 @@
     <string name="statistic">Statistic</string>
     <string name="check_in">Check in</string>
     <string name="notification">Notification</string>
-    <string name="event_info">Event Information</string>
-    <string name="member_info">Member Information</string>
 
     <!-- Titles of Views -->
     <string name="event_button">Event</string>

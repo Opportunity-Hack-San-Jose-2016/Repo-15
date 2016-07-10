@@ -65,6 +65,23 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MemberActivity" />
         </activity>
+
+        <activity
+            android:name=".NewMember2Activity"
+            android:label="@string/new_user_2"
+            android:parentActivityName=".MemberActivity"/>
+
+        <activity
+            android:name=".NewMember3Activity"
+            android:label="@string/new_user_3"
+            android:parentActivityName=".MemberActivity"/>
+
+        <activity
+            android:name=".NewMember4Activity"
+            android:label="@string/new_user_4"
+            android:parentActivityName=".MemberActivity"/>
+
+
         <activity
             android:name=".MemberListActivity"
             android:label="@string/users_list"
@@ -80,25 +97,7 @@
             android:label="@string/notification" />
         <activity android:name=".PastEventsFragment" />
         <activity android:name=".TodayEventsFragment" />
-        <activity android:name=".FutureEventsFragment" />
-        <activity android:name=".EventInfoActivity"
-            android:label="@string/event_info"
-            android:parentActivityName=".EventListActivity">
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".EventListActivity" />
-        </activity>
-        <activity android:name=".MemberInfoActivity"
-            android:label="@string/member_info"
-            android:parentActivityName=".MemberListActivity">
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MemberListActivity" />
-        </activity>
+        <activity android:name=".FutureEventsFragment"></activity>
     </application>
 
 </manifest>
