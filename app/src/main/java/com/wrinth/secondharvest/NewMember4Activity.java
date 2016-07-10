@@ -1,5 +1,6 @@
 package com.wrinth.secondharvest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -115,8 +116,8 @@ public class NewMember4Activity extends AppCompatActivity {
 
 
 //
-//                Intent memberIntent = new Intent(NewMember4Activity.this, MemberActivity.class);
-//                startActivity(memberIntent);
+                Intent memberIntent = new Intent(NewMember4Activity.this, MemberListActivity.class);
+                startActivity(memberIntent);
 
 
 
