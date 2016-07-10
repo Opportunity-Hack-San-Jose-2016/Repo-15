@@ -23,6 +23,7 @@
     <string name="member_info">Member Information</string>
     <string name="event_info">Event Information</string>
     <string name="statistics">Statistics</string>
+    <string name="mem_list">Members List</string>
 
     <!-- Titles of Views -->
     <string name="event_button">Event</string>

@@ -61,7 +61,7 @@
             android:parentActivityName=".NewMember3Activity" />
         <activity
             android:name=".MemberListActivity"
-            android:label="@string/users_list"
+            android:label="@string/mem_list"
             android:parentActivityName=".MainActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
