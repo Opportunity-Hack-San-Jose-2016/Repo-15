@@ -1,6 +1,7 @@
 package com.wrinth.secondharvest;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v4.app.Fragment;
@@ -22,7 +23,7 @@ public class FutureEventsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_future_events, container, false);
 
         final ArrayList<Event> futureEventArray = new ArrayList<Event>();
-        futureEventArray.add(new Event("Family Harvest", "07/09/2016", "San Jose", 62));
+        futureEventArray.add(new Event("12", "Family Harvest", "07/09/2016", "San Jose", 62));
 
         EventAdapter itemAdapter =
                 new EventAdapter(getActivity(), futureEventArray);
@@ -35,7 +36,16 @@ public class FutureEventsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+                Event event = futureEventArray.get(position);
+                String eventID = event.getEventID();
 
+                // Create a new intent to open the {@link EventsInfoActivity}
+                Intent eventInfoIntent = new Intent(getActivity(), EventInfoActivity.class);
+
+                eventInfoIntent.putExtra("eventID", eventID);
+
+                // Start the EventsInfoActivity
+                startActivity(eventInfoIntent);
             }
         });
 

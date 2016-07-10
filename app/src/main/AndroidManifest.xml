@@ -65,6 +65,23 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MemberActivity" />
         </activity>
+
+        <activity
+            android:name=".NewMember2Activity"
+            android:label="@string/new_user_2"
+            android:parentActivityName=".MemberActivity"/>
+
+        <activity
+            android:name=".NewMember3Activity"
+            android:label="@string/new_user_3"
+            android:parentActivityName=".MemberActivity"/>
+
+        <activity
+            android:name=".NewMember4Activity"
+            android:label="@string/new_user_4"
+            android:parentActivityName=".MemberActivity"/>
+
+
         <activity
             android:name=".MemberListActivity"
             android:label="@string/users_list"

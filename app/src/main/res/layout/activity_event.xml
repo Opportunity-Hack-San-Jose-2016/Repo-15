@@ -12,14 +12,24 @@
 
     <Button
         android:id="@+id/new_event_button"
+        android:background="#009688"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="48dp"
+        android:textSize="34dp"
+        android:textColor="#FAFAFA"
         android:text="@string/new_event_button"/>
 
     <Button
         android:id="@+id/events_list_button"
+        android:background="#009688"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="48dp"
+        android:textSize="34dp"
+        android:textColor="#FAFAFA"
         android:text="@string/events_list_button"/>
 
 </LinearLayout>
