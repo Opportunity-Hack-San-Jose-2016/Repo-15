@@ -26,7 +26,6 @@ public class NewEventActivity extends AppCompatActivity   {
 
     private String location;
 
-
     static final int DATE_PICKER_ID = 1111;
 
     @Override
@@ -40,7 +39,6 @@ public class NewEventActivity extends AppCompatActivity   {
         create_button = (Button) findViewById(R.id.create_button);
 
         // Get current date by calender
-
         final Calendar c = Calendar.getInstance();
         year  = c.get(Calendar.YEAR);
         month = c.get(Calendar.MONTH);
@@ -77,6 +75,7 @@ public class NewEventActivity extends AppCompatActivity   {
                 System.out.println(day);
                 location = location_text.getText().toString();
                 System.out.println(location);
+
                 Intent memberIntent = new Intent(NewEventActivity.this, EventActivity.class);
                 startActivity(memberIntent);
 
