@@ -23,7 +23,7 @@ public class NewMember4Activity extends AppCompatActivity {
         {
             public void onClick(View v)
             {
-                Intent memberIntent = new Intent(NewMember4Activity.this, MemberActivity.class);
+                Intent memberIntent = new Intent(NewMember4Activity.this, MemberListActivity.class);
                 startActivity(memberIntent);
             }
         });

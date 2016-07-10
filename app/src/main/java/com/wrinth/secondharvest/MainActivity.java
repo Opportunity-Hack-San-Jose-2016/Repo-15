@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NewEventActivity}
-                Intent eventIntent = new Intent(MainActivity.this, EventActivity.class);
+                Intent eventIntent = new Intent(MainActivity.this, EventListActivity.class);
 
                 // Start the NewEEventActivity
                 startActivity(eventIntent);
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link EventsListActivity}
-                Intent memberIntent = new Intent(MainActivity.this, MemberActivity.class);
+                Intent memberIntent = new Intent(MainActivity.this, MemberListActivity.class);
 
                 // Start the EventsListActivity
                 startActivity(memberIntent);

@@ -76,7 +76,7 @@ public class NewEventActivity extends AppCompatActivity   {
                 location = location_text.getText().toString();
                 System.out.println(location);
 
-                Intent memberIntent = new Intent(NewEventActivity.this, EventActivity.class);
+                Intent memberIntent = new Intent(NewEventActivity.this, EventListActivity.class);
                 startActivity(memberIntent);
 
             }

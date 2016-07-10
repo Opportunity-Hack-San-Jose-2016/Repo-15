@@ -1,9 +1,13 @@
 package com.wrinth.secondharvest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.design.widget.TabLayout;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 public class EventListActivity extends AppCompatActivity {
 
@@ -29,5 +33,28 @@ public class EventListActivity extends AppCompatActivity {
         //   3. Set the tab layout's tab names with the view pager's adapter's titles
         //      by calling onPageTitle()
         tabLayout.setupWithViewPager(viewPager);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.event_list_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.new_event:
+                // Create a new intent to open the {@link NewEventActivity}
+                Intent newEventIntent = new Intent(EventListActivity.this, NewEventActivity.class);
+
+                // Start the NewEventActivity
+                startActivity(newEventIntent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

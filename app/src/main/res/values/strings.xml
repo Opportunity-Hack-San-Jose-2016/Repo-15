@@ -40,6 +40,10 @@
     <string name="end_time_label">to</string>
     <string name="event_title_label">Title</string>
 
+    <!-- Menu items -->
+    <string name="add_new_member">Add New Member</string>
+    <string name="add_new_event">Add New Event</string>
+
     <string-array name="food_choices_label">
         <item>Chicken</item>
         <item>Beef</item>
