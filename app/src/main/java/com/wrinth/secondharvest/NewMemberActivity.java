@@ -100,6 +100,7 @@ public class NewMemberActivity extends AppCompatActivity{
                     obj.put("last_name",last_name_text_view.getText().toString());
                     obj.put("dob",date_text_view.getText().toString());
                     obj.put("language",language_text_view.getText().toString());
+                    obj.put("preferred_location","San Jose");
 
                 } catch (JSONException e) {
                     e.printStackTrace();

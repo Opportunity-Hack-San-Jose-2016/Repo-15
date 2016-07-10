@@ -32,20 +32,6 @@
         android:layout_gravity="center_horizontal"
         android:visibility="visible" />
 
-    <TimePicker
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/time_picker"
-        android:visibility="gone" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/location_text"
-        android:layout_gravity="center_horizontal"
-        android:hint="Enter location"
-        android:layout_toEndOf="@+id/text_date"/>
-
 
     <Button
         android:layout_width="match_parent"
@@ -55,6 +41,46 @@
         android:layout_gravity="center_horizontal"
         android:layout_alignParentBottom="true"/>
 
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start time"
+        android:layout_below="@+id/text_date"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView33"
+        android:layout_alignBottom="@+id/textView32"
+        android:layout_toEndOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Time"
+        android:layout_below="@+id/textView33"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView35"
+        android:layout_alignBottom="@+id/textView34"
+        android:layout_toEndOf="@+id/textView34" />
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:layout_above="@+id/create_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:visibility="invisible" />
 
 
 </RelativeLayout>

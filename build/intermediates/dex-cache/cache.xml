@@ -47,7 +47,7 @@
         jar="C:\Users\JohnL\OneDrive\Documents\Android\Repo-15\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="7617021685da6081a2d575cdcd0a4bb51013ce68">
+        sha1="8bce7dfc56a7aff2b4c27ae0b0a17eb4245b7e7f">
         <dex dex="C:\Users\JohnL\OneDrive\Documents\Android\Repo-15\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3c42f71090d7965f201bdc95eff1b3fae5112bdf\classes.dex" />
     </item>
     <item
@@ -117,7 +117,7 @@
         jar="C:\Users\JohnL\OneDrive\Documents\Android\Repo-15\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="e30b8430858f60a0d2e9d4f6268c0cf0e3e8f591">
+        sha1="96a8b56875d003733a03e50aab1ae9cc8fb7d0e4">
         <dex dex="C:\Users\JohnL\OneDrive\Documents\Android\Repo-15\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e3acff1829aa236478b0e54de40ddb81b0b6840a\classes.dex" />
     </item>
     <item

@@ -49,7 +49,18 @@ public class NewMember3Activity extends AppCompatActivity {
         {
             public void onClick(View v)
             {
+                try {
+                    obj.put("adults","1");
+                    obj.put("children","2");
+                    obj.put("total",Integer.parseInt("2")+Integer.parseInt("4"));
+                    obj.put("foodStamps","true");
+                    obj.put("lastMonths","true");
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
                 Intent memberIntent = new Intent(NewMember3Activity.this, NewMember4Activity.class);
+                memberIntent.putExtra("obj", obj.toString());
                 startActivity(memberIntent);
             }
         });

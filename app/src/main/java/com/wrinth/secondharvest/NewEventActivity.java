@@ -35,7 +35,7 @@ public class NewEventActivity extends AppCompatActivity   {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         date_text_view = (TextView) findViewById(R.id.text_date);
-        location_text = (EditText)findViewById(R.id.location_text);
+//        location_text = (EditText)findViewById(R.id.location_text);
         create_button = (Button) findViewById(R.id.create_button);
 
         // Get current date by calender
