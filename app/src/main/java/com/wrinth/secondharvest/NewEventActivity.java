@@ -2,6 +2,7 @@ package com.wrinth.secondharvest;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -76,10 +77,11 @@ public class NewEventActivity extends AppCompatActivity   {
                 System.out.println(day);
                 location = location_text.getText().toString();
                 System.out.println(location);
+                Intent memberIntent = new Intent(NewEventActivity.this, EventActivity.class);
+                startActivity(memberIntent);
 
             }
         });
-
 
     }
 
