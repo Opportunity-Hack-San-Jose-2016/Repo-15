@@ -9,29 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.wrinth.secondharvest.NewEventActivity">
 
-    <TextView
-        android:id="@+id/date_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/date_label"
-        android:textSize="32dp"
-        android:layout_alignParentTop="true"/>
-
-    <TextView
-        android:id="@+id/text_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-
-        android:layout_toEndOf="@+id/date_label"/>
-
-    <DatePicker
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/date_picker"
-        android:layout_gravity="center_horizontal"
-        android:visibility="visible" />
-
 
     <Button
         android:layout_width="match_parent"
@@ -39,47 +16,73 @@
         android:text="Create"
         android:id="@+id/create_button"
         android:layout_gravity="center_horizontal"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="61dp" />
 
     <TextView
-        android:id="@+id/textView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start time"
-        android:layout_below="@+id/text_date"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date"
+        android:id="@+id/textView32"
+        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/textView33"
-        android:layout_alignBottom="@+id/textView32"
-        android:layout_toEndOf="@+id/textView32" />
-
-    <TextView
-        android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="End Time"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/date"
+        android:layout_below="@+id/textView32"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Start Time:"
+        android:id="@+id/textView33"
+        android:layout_below="@+id/date"
+        android:layout_toEndOf="@+id/date" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_time"
         android:layout_below="@+id/textView33"
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/textView35"
-        android:layout_alignBottom="@+id/textView34"
-        android:layout_toEndOf="@+id/textView34" />
-
-    <TimePicker
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/timePicker"
-        android:layout_above="@+id/create_button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="58dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="End Time"
+        android:id="@+id/textView34"
+        android:layout_below="@+id/start_time"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/end_time"
+        android:layout_below="@+id/textView34"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_text"
+        android:hint="Location"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_text_view"
+        android:layout_above="@+id/date"
+        android:layout_alignParentStart="true"
         android:visibility="invisible" />
 
 
