@@ -21,6 +21,7 @@ import java.util.Calendar;
 
 public class NewMemberActivity extends AppCompatActivity{
 
+    private JSONObject obj;
     private String first_name;
     private String middle_name;
     private String last_name;
@@ -91,7 +92,7 @@ public class NewMemberActivity extends AppCompatActivity{
         {
             public void onClick(View v)
             {
-                JSONObject obj = new JSONObject();
+                obj = new JSONObject();
 
                 try {
                     obj.put("first_name",first_name_text_view.getText().toString());
