@@ -8,10 +8,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
-
 public class EventActivity extends AppCompatActivity {
 
 
@@ -23,23 +19,6 @@ public class EventActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
-
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        Log.d("connected to database", "db ref: "+database.getReference());
-        DatabaseReference myRef = database.getReference();
-
-        myRef.setValue("Hello, World!asdfasdfasdfasdfasdfsadfsdfdsf");
-        myRef.child("users").child("asfdds").setValue("asdfasdf");
-
-        myRef.child("users").child("asfdds").setValue("asdfadsf");
-
-
-
-
-
 
         setContentView(R.layout.activity_event);
 

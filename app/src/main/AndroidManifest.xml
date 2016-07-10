@@ -97,7 +97,28 @@
             android:label="@string/notification" />
         <activity android:name=".PastEventsFragment" />
         <activity android:name=".TodayEventsFragment" />
-        <activity android:name=".FutureEventsFragment"></activity>
+        <activity android:name=".FutureEventsFragment" />
+
+        <activity
+            android:name=".MemberInfoActivity"
+            android:label="@string/member_info"
+            android:parentActivityName=".MemberListActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MemberListActivity" />
+        </activity>
+        <activity
+            android:name=".EventInfoActivity"
+            android:label="@string/event_info"
+            android:parentActivityName=".EventListActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventListActivity" />
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
