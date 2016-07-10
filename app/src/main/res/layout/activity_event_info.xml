@@ -14,13 +14,14 @@
         android:id="@+id/user_info"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:orientation="vertical">
+
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/user_buttons"
+        android:id="@+id/event_info_buttons"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -28,17 +29,20 @@
         <Button
             android:id="@+id/remainder_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:text="@string/remainder_button"/>
         <Button
             android:id="@+id/statistic_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:text="@string/statistic_button"/>
         <Button
             android:id="@+id/check_in_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:text="@string/check_in_button"/>
 
     </LinearLayout>

@@ -10,7 +10,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +22,8 @@
         <activity
             android:name=".NewEventActivity"
             android:label="@string/new_event"
-            android:parentActivityName=".EventListActivity">
+            android:parentActivityName=".EventListActivity"
+            android:screenOrientation="portrait">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -30,7 +33,8 @@
         <activity
             android:name=".EventListActivity"
             android:label="@string/events_list"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -40,7 +44,8 @@
         <activity
             android:name=".NewMemberActivity"
             android:label="@string/new_user"
-            android:parentActivityName=".MemberListActivity">
+            android:parentActivityName=".MemberListActivity"
+            android:screenOrientation="portrait">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -50,35 +55,37 @@
         <activity
             android:name=".NewMember2Activity"
             android:label="@string/new_user_2"
-            android:parentActivityName=".NewMemberActivity" />
+            android:parentActivityName=".NewMemberActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".NewMember3Activity"
             android:label="@string/new_user_3"
-            android:parentActivityName=".NewMember2Activity" />
+            android:parentActivityName=".NewMember2Activity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".NewMember4Activity"
             android:label="@string/new_user_4"
-            android:parentActivityName=".NewMember3Activity" />
+            android:parentActivityName=".NewMember3Activity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MemberListActivity"
             android:label="@string/users_list"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity
-            android:name=".NotificationActivity"
-            android:label="@string/notification" />
         <activity android:name=".PastEventsFragment" />
         <activity android:name=".TodayEventsFragment" />
         <activity android:name=".FutureEventsFragment" />
         <activity
             android:name=".MemberInfoActivity"
             android:label="@string/member_info"
-            android:parentActivityName=".MemberListActivity">
+            android:parentActivityName=".MemberListActivity"
+            android:screenOrientation="portrait">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -88,7 +95,8 @@
         <activity
             android:name=".EventInfoActivity"
             android:label="@string/event_info"
-            android:parentActivityName=".EventListActivity">
+            android:parentActivityName=".EventListActivity"
+            android:screenOrientation="portrait">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -97,14 +105,43 @@
         </activity>
         <activity
             android:name=".MemberInfoUpdateActivity"
-            android:label="@string/member_update">
+            android:label="@string/member_update"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MemberInfoActivity" />
         </activity>
-        <activity android:name=".EventCheckInActivity" />
-        <activity android:name=".EventStatisticActivity" />
-        <activity android:name=".EventNotificationActivity"></activity>
+        <activity android:name=".EventCheckInActivity"
+            android:label="@string/event_info"
+            android:parentActivityName=".EventListActivity"
+            android:screenOrientation="portrait">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventListActivity" />
+        </activity>
+        <activity
+            android:name=".EventStatisticActivity"
+            android:label="@string/event_info"
+            android:parentActivityName=".EventListActivity"
+            android:screenOrientation="portrait">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventListActivity" />
+        </activity>
+        <activity android:name=".EventNotificationActivity"
+            android:label="@string/event_info"
+            android:parentActivityName=".EventListActivity"
+            android:screenOrientation="portrait">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventListActivity" />
+        </activity>
     </application>
 
 </manifest>

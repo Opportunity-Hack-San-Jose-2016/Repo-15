@@ -20,8 +20,8 @@ public class TodayEventsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_today_events, container, false);
 
         final ArrayList<Event> todayEventArray = new ArrayList<Event>();
-        todayEventArray.add(new Event("34", "Family Harvest", "07/09/2016", "San Jose", 122));
-        todayEventArray.add(new Event("12", "Senior Harvest", "07/09/2016", "San Jose", 72));
+        todayEventArray.add(new Event("34", "Family Harvest", "07/10/2016", "San Jose", 122));
+        todayEventArray.add(new Event("12", "Senior Harvest", "07/10/2016", "San Jose", 72));
 
         EventAdapter itemAdapter =
                 new EventAdapter(getActivity(), todayEventArray);
