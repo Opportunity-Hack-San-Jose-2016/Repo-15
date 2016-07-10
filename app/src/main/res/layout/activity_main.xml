@@ -21,7 +21,8 @@
         android:textColor="#FAFAFA"
         android:text="@string/event_button"
         android:elevation="18dp"
-        android:shadowColor="#020202" />
+        android:shadowColor="#020202"
+        />
 
     <Button
         android:id="@+id/member_button"
