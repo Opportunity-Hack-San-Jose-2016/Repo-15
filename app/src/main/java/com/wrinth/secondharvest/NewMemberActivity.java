@@ -95,22 +95,15 @@ public class NewMemberActivity extends AppCompatActivity{
 
                 try {
                     obj.put("first_name",first_name_text_view.getText().toString());
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-                try {
                     obj.put("middle_name",middle_name_text_view.getText().toString());
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-
-                try {
                     obj.put("last_name",last_name_text_view.getText().toString());
+                    obj.put("dob",date_text_view.getText().toString());
+                    obj.put("language",language_text_view.getText().toString());
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
+
 
                 gender_radio = (RadioButton) findViewById(gender_group.getCheckedRadioButtonId());
 
@@ -127,19 +120,6 @@ public class NewMemberActivity extends AppCompatActivity{
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-                }
-
-
-                try {
-                    obj.put("dob",date_text_view.getText().toString());
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-                try {
-                    obj.put("language",language_text_view.getText().toString());
-                } catch (JSONException e) {
-                    e.printStackTrace();
                 }
 
                 System.out.println(obj);
