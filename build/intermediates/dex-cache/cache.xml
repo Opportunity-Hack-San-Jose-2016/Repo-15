@@ -26,7 +26,7 @@
         jar="/Users/vm/Desktop/this/Repo-15/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="ed97121fc416366e8329591a46517a103824808a">
+        sha1="7426f9f2efe6737ccea81edc0c5d091b2dba9f1b">
         <dex dex="/Users/vm/Desktop/this/Repo-15/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_4dc43efbb54e6bf24ef0020060a7f54e45eee93e/classes.dex" />
     </item>
     <item
@@ -82,7 +82,7 @@
         jar="/Users/vm/Desktop/this/Repo-15/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="adec547b58de625cdf7599457edf61e18270ea47">
+        sha1="8353cbe39b1532e66c8fca7c5eb33b09541c3ea8">
         <dex dex="/Users/vm/Desktop/this/Repo-15/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d35bfcb44704202da7d5ed71beeba22d905e305c/classes.dex" />
     </item>
     <item

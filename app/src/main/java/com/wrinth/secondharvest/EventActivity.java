@@ -32,9 +32,9 @@ public class EventActivity extends AppCompatActivity {
         DatabaseReference myRef = database.getReference();
 
         myRef.setValue("Hello, World!asdfasdfasdfasdfasdfsadfsdfdsf");
-        myRef.child("users").child("asfdds").setValue("123432423423");
+        myRef.child("users").child("asfdds").setValue("asdfasdf");
 
-        myRef.child("users").child("asfdds").setValue("12312312312asdkfsdkaljjkldsafkljdfsajkldfsajkldfasjkl");
+        myRef.child("users").child("asfdds").setValue("asdfadsf");
 
 
 
