@@ -104,7 +104,12 @@
         </activity>
         <activity android:name=".EventCheckInActivity" />
         <activity android:name=".EventStatisticActivity" />
-        <activity android:name=".EventNotificationActivity"></activity>
+        <activity android:name=".EventNotificationActivity" />
+        <activity android:name=".StatisticsActivity"
+            android:label="@string/statistics">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventInfoActivity" /></activity>
     </application>
 
 </manifest>

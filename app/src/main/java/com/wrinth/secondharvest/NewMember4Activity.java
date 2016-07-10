@@ -105,11 +105,6 @@ public class NewMember4Activity extends AppCompatActivity {
                                     //Displaying it on textview
                                     //textViewPersons.setText(string);
                                 }
-
-
-
-
-
                             }
 
                             @Override
