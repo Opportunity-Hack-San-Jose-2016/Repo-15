@@ -80,17 +80,17 @@
             android:id="@+id/remainder_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/remainder_button"/>
+            android:text="Notify all members attending event"/>
         <Button
             android:id="@+id/statistic_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/statistic_button"/>
+            android:text="Show Statistics "/>
         <Button
             android:id="@+id/check_in_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/check_in_button"/>
+            android:text="check in a customer"/>
 
     </LinearLayout>
 

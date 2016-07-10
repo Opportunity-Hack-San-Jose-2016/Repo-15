@@ -109,7 +109,8 @@
             android:label="@string/statistics">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".EventInfoActivity" /></activity>
+                android:value=".EventInfoActivity" />
+        </activity>
     </application>
 
 </manifest>
