@@ -7,4 +7,7 @@
 
 
     <color name="event_color">#F39C12</color>
+
+    <color name="indigo">#F06292</color>
+    <color name="pink">#F48FB1</color>
 </resources>

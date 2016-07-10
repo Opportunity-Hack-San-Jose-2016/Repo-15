@@ -13,6 +13,7 @@ import org.json.JSONObject;
 
 public class NewMember2Activity extends AppCompatActivity {
 
+    private JSONObject obj;
     private Button next;
 
     private EditText add1_view;
@@ -31,6 +32,17 @@ public class NewMember2Activity extends AppCompatActivity {
 
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
+
+        Bundle extraEventID = getIntent().getExtras();
+        if (extraEventID == null) {
+            obj = null;
+        }
+        try {
+            obj = new JSONObject(extraEventID.getString("obj"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        System.out.println(obj);
         next = (Button) findViewById(R.id.next);
         add1_view = (EditText) findViewById(R.id.add1);
         add2_view = (EditText) findViewById(R.id.add2);
@@ -45,8 +57,6 @@ public class NewMember2Activity extends AppCompatActivity {
         {
             public void onClick(View v)
             {
-
-                JSONObject obj = new JSONObject();
 
                 try {
                     obj.put("add1",add1_view.getText().toString());
@@ -63,6 +73,7 @@ public class NewMember2Activity extends AppCompatActivity {
                 }
 
                 System.out.println(obj);
+
                 Intent memberIntent = new Intent(NewMember2Activity.this, NewMember3Activity.class);
                 memberIntent.putExtra("obj", obj.toString());
                 startActivity(memberIntent);

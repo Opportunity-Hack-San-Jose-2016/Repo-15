@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wrinth.secondharvest">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -45,23 +47,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MemberListActivity" />
         </activity>
-
         <activity
             android:name=".NewMember2Activity"
             android:label="@string/new_user_2"
-            android:parentActivityName=".NewMemberActivity"/>
-
+            android:parentActivityName=".NewMemberActivity" />
         <activity
             android:name=".NewMember3Activity"
             android:label="@string/new_user_3"
-            android:parentActivityName=".NewMember2Activity"/>
-
+            android:parentActivityName=".NewMember2Activity" />
         <activity
             android:name=".NewMember4Activity"
             android:label="@string/new_user_4"
-            android:parentActivityName=".NewMember3Activity"/>
-
-
+            android:parentActivityName=".NewMember3Activity" />
         <activity
             android:name=".MemberListActivity"
             android:label="@string/users_list"
@@ -78,7 +75,6 @@
         <activity android:name=".PastEventsFragment" />
         <activity android:name=".TodayEventsFragment" />
         <activity android:name=".FutureEventsFragment" />
-
         <activity
             android:name=".MemberInfoActivity"
             android:label="@string/member_info"
@@ -99,8 +95,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".EventListActivity" />
         </activity>
+        <activity
+            android:name=".MemberInfoUpdateActivity"
+            android:label="@string/member_update">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MemberInfoActivity" />
+        </activity>
+        <activity android:name=".EventCheckInActivity" />
+        <activity android:name=".EventStatisticActivity" />
+        <activity android:name=".EventNotificationActivity"></activity>
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
