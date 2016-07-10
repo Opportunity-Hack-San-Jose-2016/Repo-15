@@ -17,39 +17,70 @@
         </activity>
         <activity
             android:name=".EventActivity"
-            android:label="@string/event">
+            android:label="@string/event"
+            android:parentActivityName=".MainActivity">
 
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".MemberActivity"
-            android:label="@string/member">
+            android:label="@string/member"
+            android:parentActivityName=".MainActivity">
 
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".NewEventActivity"
-            android:label="@string/new_event">
+            android:label="@string/new_event"
+            android:parentActivityName=".EventActivity">
 
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventActivity" />
         </activity>
         <activity
             android:name=".EventListActivity"
-            android:label="@string/events_list">
+            android:label="@string/events_list"
+            android:parentActivityName=".EventActivity">
 
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventActivity" />
         </activity>
         <activity
             android:name=".NewMemberActivity"
-            android:label="@string/new_user">
+            android:label="@string/new_user"
+            android:parentActivityName=".MemberActivity">
 
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MemberActivity" />
         </activity>
         <activity
             android:name=".MemberListActivity"
-            android:label="@string/users_list">
+            android:label="@string/users_list"
+            android:parentActivityName=".MemberActivity">
 
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MemberActivity" />
         </activity>
         <activity
             android:name=".NotificationActivity"
-            android:label="@string/notification">
-
-        </activity>
+            android:label="@string/notification" />
+        <activity android:name=".PastEventsFragment" />
+        <activity android:name=".TodayEventsFragment" />
+        <activity android:name=".FutureEventsFragment"></activity>
     </application>
 
 </manifest>
