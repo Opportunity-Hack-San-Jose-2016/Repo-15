@@ -10,30 +10,52 @@
     android:orientation="vertical"
     tools:context="com.wrinth.secondharvest.NewEventActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/date_label"
-        android:textSize="32dp" />
-    <EditText
-        android:id="@+id/new_event_date"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="12dp"
-        android:textSize="24dp" />
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/date_label"
+            android:textSize="40dp" />
+        <EditText
+            android:id="@+id/new_event_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/location_label"
+            android:textSize="40dp"/>
+
+        <EditText
+            android:id="@+id/new_event_location"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="24dp" />
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/location_label"/>
-    <EditText
-        android:id="@+id/new_event_location"
-        android:layout_width="match_parent"
-        android:layout_height="12dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Chickcken"/>
+        android:text="Chickcken"
+        android:textSize="32dp"/>
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -42,6 +64,7 @@
         android:id="@+id/create_event_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="24dp"
         android:text="@string/create_event_button"/>
 
 </LinearLayout>
