@@ -7,7 +7,7 @@
     <string name="new_event">New Event</string>
     <string name="events_list">Events List</string>
     <string name="new_user">New User</string>
-    <string name="users_list">Events List</string>
+    <string name="users_list">Users List</string>
     <string name="past_events_list">Past Events List</string>
     <string name="today_events_list">Today Events List</string>
     <string name="future_events_list">Future Events List</string>
